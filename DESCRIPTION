@@ -1,0 +1,26 @@
+Package: snpR
+Title: Determine enrichment of SNPs in a given set of genomic regions.
+Version: 0.0.1
+Authors@R: 'Anil Chalisey <anilchalisey@gmail.com> [aut, cre]'
+Description: The snpR package identifies trait-associated SNPs from the GWAS catalog, and uses this list of SNPs to generate independent SNPs, identify other SNPs in LD, and determines the significance of the overlap between these SNPs and genomic regions of interest. 
+Depends: R (>= 3.5.0)
+SystemRequirements: PLINK
+License: GPL-3 + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+biocViews:
+Imports:
+    dplyr,
+    magrittr,
+    lazyeval,
+    readr,
+    data.table,
+    parallel,
+    GenomicRanges,
+    grDevices,
+    graphics,
+    rtracklayer,
+    utils,
+    stats,
+    IRanges

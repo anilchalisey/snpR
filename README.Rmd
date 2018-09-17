@@ -1,0 +1,22 @@
+---
+output:
+  md_document:
+    variant: gfm
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+The snpR package is designed to identify trait-associated SNPs from the GWAS catalog, and use this list of SNPs to: 
+
+* Prune the list to generate independent SNPs - defined as those with low LD (r2 < 0.1) to each other and beyond 500kb from each other.
+* For each independent (index) SNP determine all SNPs in LD (r2 defined by user) from 1K Genomes Project Phase 3 CEU data.
+* Generate a BED file of the index SNP locus - the genomic region spanning the distance between the most-5' and most-3' SNPs in LD at that threshold.
+* Determine enrichment of the overlap between the SNPs and genomic regions of interest.
+
+The website for snpR may be found [here](https://anilchalisey.github.io/snpR/).
