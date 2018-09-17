@@ -1,3 +1,5 @@
+# snpR
+
 The snpR package is designed to identify trait-associated SNPs from the
 GWAS catalog, and use this list of SNPs to:
 
